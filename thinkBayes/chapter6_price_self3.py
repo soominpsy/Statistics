@@ -71,7 +71,7 @@ class Player(object):
         self.prior = Price(pmf, self)
         self.posterior = self.prior.Copy()
         self.posterior.Update(guess)
-        print(self.posterior)
+#        print(self.posterior)
 
 class Price(thinkbayes.Suite):
     def __init__(self,pmf, player):
@@ -105,17 +105,14 @@ def main():
     player2 = Player(price2, bid2, diff2)
 #    PmfPlayer1 = player1.PmfPrice()
 #    PmfPlayer2 = player2.PmfPrice()
-    p1 = player1.MakeBeliefs(20000)
-    p2 = player2.MakeBeliefs(40000)
-#    print(type(p1))
+    player1.MakeBeliefs(20000)
+    player2.MakeBeliefs(40000)
+    print(type(p1))
 #    print(p1)
 
 #    price1 = Price(PmfPlayer1, player1)
 #    like_test1 = price1.Likelihood(25000, 22000)
 #    print(like_test1)
-
-
-
 
 #    thinkplot.PrePlot(1)
 #    thinkplot.Pmf(PmfPlayer1)
