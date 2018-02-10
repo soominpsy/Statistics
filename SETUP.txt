@@ -19,7 +19,7 @@
 (3) git push origin 
 
 
-!!!!!!!NOTE :: REMOVING and UPLOADING and be done in a commit :
+!!!!!!! NOTE :: REMOVING and UPLOADING and be done in a commit :
 (1) git rm -r filename1
 (2) git rm -r filename2
 (3) git commit -m "must text something"
