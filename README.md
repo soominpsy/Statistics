@@ -1,4 +1,4 @@
-# statistic
+# statistics
 
 git remote add upstream https://github.com/StudyGroupPKU/Statistics.git
 
