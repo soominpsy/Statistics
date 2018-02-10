@@ -1,5 +1,10 @@
 # Statistics
 
+0. Setting the ".bashrc" configure on your home directory like following :
+	
+	git config --global uesr.email "your email address"  ("your email address" should be replaced by yours, i.e. skyblue111@naver.com) 
+	git config --global user.name "your user name"       ("your user name" should be replace by yours on github ID, i.e. junholeephy)
+
 1. "Fork" the "Statistics" repository onto your account
 
 2. Input following command on your terminal :
@@ -32,6 +37,11 @@
 
 	(3) git pull
 
+	(4) git checkout master
+
+	(5) git checkout "branch_name"
+
+	(6) git push
 
 5. Addtional git command you might interested in :
 	git branch -a
