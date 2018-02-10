@@ -31,6 +31,8 @@
 
 4. If there are some changes on masster branch that you want to update onto your own repository, do following:
 	
+	(0) git checkout "branch"   ("branch" should be replace by the name of existing branch which we want to update, i.e. junho)
+
 	(1) git fetch upstream
 
 	(2) git pull upstream master
