@@ -35,13 +35,7 @@
 
 	(2) git pull upstream master
 
-	(3) git pull
-
-	(4) git checkout master
-
-	(5) git checkout "branch_name"
-
-	(6) git push
+	(3) git push
 
 5. Addtional git command you might interested in :
 	git branch -a
