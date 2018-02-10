@@ -1,0 +1,5 @@
+Setup for everytime for your using github
+
+git fetch upstream
+git pull upstream master
+git push
