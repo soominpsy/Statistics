@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 #MyMagic8Ball
 
 import random
