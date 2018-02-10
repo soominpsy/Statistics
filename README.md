@@ -9,6 +9,8 @@
 
 2. Input following command on your terminal :
 
+	(git config --global  credential.usehttppath true  :: in case of push error on Window)	
+
 	git clone https://github.com/StudyGroupPKU/Statistics.git
 
 	git remote add upstream https://github.com/StudyGroupPKU/Statistics.git
