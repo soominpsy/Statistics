@@ -1,5 +1,33 @@
-Setup for everytime for your using github
+##Setup for everytime for your using github
 
-git fetch upstream
-git pull upstream master
-git push
+
+!!!!!! UPDATE !!!!!!!!    (occasionaly update, in case of crush)
+(1) git fetch upstream
+(2) git pull upstream master
+(3) git push
+
+
+!!!!!! UPLOADING!!!!!!!!!
+(1) git add filename
+(2) git commit -m "must text something"
+(3) git push origin
+
+
+!!!!!! REMOVING !!!!!!!!
+(1) git rm -r filename
+(2) git commit -m "must text something"
+(3) git push origin 
+
+
+!!!!!!!NOTE :: REMOVING and UPLOADING and be done in a commit :
+(1) git rm -r filename1
+(2) git rm -r filename2
+(3) git commit -m "must text something"
+(4) git push origin
+
+
+!!!!!!! PULL REQUEST !!!!!!
+(1) In order to merge your contribution on the master brunch, you should click "pull request" button under your "fork"ed repository.
+(2) After make a "pull request", wait for group owner to accept/decline your modification. 
+(3) For most of the times, you'd better comment on your works, i.e. "I make this kind of change, and it is better than before"
+
