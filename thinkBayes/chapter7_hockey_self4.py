@@ -39,6 +39,28 @@ def EvalGaussianPdf(x, mu, sigma):
 def EvalPoissonPmf(lam, k):
     return (lam)**k * math.exp(-lam)/ math.factorial(k)
 
+def MakeGoalPmf(suite):
+    metapmf = thinkbayes.Pmf()
+    for lam, prob in suite.Items():
+        pmf = MakePoissonPmf(lam, 10)              # MakePoissonPmf
+        metapmf.Set(pmf, prob)
+    mix = MakeMixture(metapmf)                     #MakeMixture
+    return mix
+
+def MakePoissonPmf(lam, high):
+    pmf = thinkbayes.Pmf()
+    for k in xrange(0,high+1):
+        p = EvalPoissonPmf(lam, k)
+        pmf.Set(k,p)
+    pmf.Normalize()
+    return pmf
+
+def MakeMixture(metapmf):
+    mix = thinkbayes.Pmf()
+    for pmf, p1 in metapmf.Items():
+        for x,p2 in pmf.Items():
+            mix.Incr(x, p1*p2)
+    return mix
 
 
 def main():
@@ -59,6 +81,13 @@ def main():
     thinkplot.Pmf(p2)
     thinkplot.Save(root='hockey_self4_posterior',xlabel='',ylabel='Probability',formats=['pdf'])
 
+    p1 = MakeGoalPmf(p1)
+    p2 = MakeGoalPmf(p2)
+    thinkplot.Clf()
+    thinkplot.preplot(num=2)
+    thinkplot.Pmf(p1)
+    thinkplot.Pmf(p2)
+    thinkplot.Save(root='hockey_self4_MakeGoalPmf',xlabel='',ylabel='Probability',formats=['pdf'])
 
 if __name__=="__main__":
     main()
