@@ -4,10 +4,14 @@ Most useful command on the bash terminal
 (1) ls			:"list"		list all visible items under your directory;
 
 
-(2) cd			:"change directory"	change directory to another;
+(2) cd			: "change directory"	change directory to another;
 	(2.1) cd ..	: back to upper level directory;
 	(2.2) cd .	: stay at current directory;
 	(2.3) cd FILE	: change directory into the file named "FILE";
+
+
+(3) mv			: "move"	move a file/folder to indicated directory;
+	(3.1)	mv filename1 .. 	: move a filename1 to upper directory;
 
 
 (3) mkdir FOLDER	: "make directory" 	generate a folder name with "FOLDER";

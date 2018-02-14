@@ -1,5 +1,9 @@
 # Statistics
 
+GitHub setting
+
+-1. If your OS is Window, download and install git from here : "https://www.git-scm.com/downloads"
+
 0. Setting the ".bashrc" configure on your home directory like following :
 	
 	git config --global user.email "your email address"  ("your email address" should be replaced by yours, i.e. skyblue111@naver.com) 
