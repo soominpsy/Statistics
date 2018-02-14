@@ -6,7 +6,8 @@ GitHub setting
 
 0. Setting the ".bashrc" configure on your home directory like following :
 	
-	git config --global uesr.email "your email address"  ("your email address" should be replaced by yours, i.e. skyblue111@naver.com) 
+	git config --global user.email "your email address"  ("your email address" should be replaced by yours, i.e. skyblue111@naver.com) 
+	
 	git config --global user.name "your user name"       ("your user name" should be replace by yours on github ID, i.e. junholeephy)
 
 1. "Fork" the "Statistics" repository onto your account
