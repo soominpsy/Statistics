@@ -1,8 +1,24 @@
 conclusion and summary for next homeworks
 
-1.  github operation.
-2.  hello world
-3.  numerial operation adding, subtracting, multiplying, dividing... 
+..  github operation : make your own folder & txt file and upload to github
+..  bash operation : ls, cd, mkdir..  ex) BASH.txt
+..  hello world
+
+..  numerial operation adding, subtracting, multiplying, dividing... 
+..  list, tuple, dictionary
+..  if else   :: odd and even number output.  combining list, tuple, dictonary
+..  for :: output numbers.  combining list, tuple, dictonary
+..  the prime numbers :: for, if else
+..  import , from import as
+..  def function
+..  work together to build a project with "def"
+..  class 
+..  work together to build a project with "class" with larger project
+..  input ".dat", ".txt" files, and then output, maybe sort, maybe counting how many number doest it counts.
+..  input ",json" files, and then output, maybe sort, maybe counting how many number doest it counts.
+..  read "root files" maybe...
+
+
 
 
 
