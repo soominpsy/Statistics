@@ -50,6 +50,9 @@ GitHub setting
 	git branch -a
 	git checkout master (or a branch name)
 	git rm tttest.py		(remove a certain file, say tttest.py, from your own repository after commit and push)
+	git log
+	git reset commit-id
+	git push -f
 
 
 
