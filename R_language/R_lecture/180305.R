@@ -101,28 +101,46 @@
 #A.3 <- 4:9; print(A.3); cat(A.3); 
 #print(cat(A.3))
 
-oops <- c(7,9,13)
-t = rep(oops,4); print(t); rep(oops,c(4,4,4))
-1:3 ;rep(oops,1:3)
-rep(oops, c(1,1,2))
-rep(1:2, c(10,15))
-rep(1:2, each=5); rep(1:2, 5)
-rep(1:3, seq(1,3)); cat(rep(1:3, seq(1,3)))   # cat to remote output of "[]"
+#oops <- c(7,9,13)
+#t = rep(oops,4); print(t); rep(oops,c(4,4,4))
+#1:3 ;rep(oops,1:3)
+#rep(oops, c(1,1,2))
+#rep(1:2, c(10,15))
+#rep(1:2, each=5); rep(1:2, 5)
+#rep(1:3, seq(1,3)); cat(rep(1:3, seq(1,3)))   # cat to remote output of "[]"
 
-x <- 1:12; print(x); 
+#x <- 1:12; print(x); 
 #x <- 0:12; print(x); 
-cat(x)
-xd1 <- (dim(x) <- c(4,3)); print(x); print(xd1)  # dimention
-xd2 <- (dim(x)<-c(2,2,3)); print(x); print(xd2)
+#cat(x)
+#xd1 <- (dim(x) <- c(4,3)); print(x); print(xd1)  # dimention
+#xd2 <- (dim(x)<-c(2,2,3)); print(x); print(xd2)
 
-y <- seq(1,12)
-dim(y)<-c(3,4); print(y);
+#y <- seq(1,12)
+#dim(y)<-c(3,4); print(y);
 
-z.0 <-matrix(1:12, nrow=3); print(z.0)              # fill the matrix column first
-z.1 <-matrix(1:12, nrow=3, byrow = T); print(z.1)   # fill in row first
+#z.0 <-matrix(1:12, nrow=3); print(z.0)              # fill the matrix column first
+#z.1 <-matrix(1:12, nrow=3, byrow = T); print(z.1)   # fill in row first
+#print(z.1[2]); print(z.1[2,])
 
+#x <- matrix(1:12, nrow=3, byrow=T); print(x)
+#rownames(x)<-LETTERS[4:6]   # it is different fuction "LETTERS" and "letters"
+#colnames(x)<-letters[1:4]
+#print(x)
+#print(x[a]); print(x[a,]); print(x[,a])
 
+x.1 <- cbind(A=1:4, B=5:8, C=9:12); print(x.1)   # column bind
+x.2 <- rbind(A=1:4, B=5:8, C=9:12); print(x.2)   # row bind
 
+rownames(x.1)<-LETTERS[1:4]; print(x.1)
+colnames(x.1)<-letters[1:3]; print(x.1)
+length(col(x.1)) ## ??? self test, how do I get row/col num?
+
+rownames(x.1)<-c("j","u","n","h"); print(x.1)   # self written rownames 
+colnames(x.1)<-c(1,2,3); print(x.1)             # seems the name doesn't need to be in type of string, it is also possible in type of integer
+print(class(x.1)); print(is.integer(x.1)); print(is.double(x.1))
+
+rownames(x.1)<-c(T,F,TRUE,FALSE); print(x.1)
+colnames(x.1)<-c("1",1,"test"); print(x.1); class(colnames(x.1))
 
 
 
